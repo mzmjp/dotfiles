@@ -1,0 +1,27 @@
+{
+    "editor.fontSize": 20,
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "indent",
+    "editor.renderWhitespace": "all",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+// #Emmet
+// via : https://qiita.com/hi85/items/eaede5ebb509f21f27f5
+    "editor.snippetSuggestions": "top", // Emmet などのスニペット候補を優先して表示
+    "emmet.showSuggestionsAsSnippets": true, // Emmet の候補を表示
+    "emmet.triggerExpansionOnTab": true, // TAB キーで Emmet を展開できるようにする
+    "emmet.variables": { // Emmet で展開される HTML の言語を変更
+        "lang": "ja"
+    },
+    "editor.tabSize": 2,
+    "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace",
+    "editor.renderControlCharacters": true,
+    "terminal.integrated.fontSize": 16,
+    "cSpell.userWords": [
+        "mybook",
+        "mzmjp"
+    ],
+    "window.zoomLevel": 0,
+
+}
