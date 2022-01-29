@@ -1,27 +1,68 @@
 {
-    "editor.fontSize": 20,
-    "editor.wordWrap": "on",
-    "editor.wrappingIndent": "indent",
-    "editor.renderWhitespace": "all",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
-// #Emmet
-// via : https://qiita.com/hi85/items/eaede5ebb509f21f27f5
-    "editor.snippetSuggestions": "top", // Emmet などのスニペット候補を優先して表示
-    "emmet.showSuggestionsAsSnippets": true, // Emmet の候補を表示
-    "emmet.triggerExpansionOnTab": true, // TAB キーで Emmet を展開できるようにする
-    "emmet.variables": { // Emmet で展開される HTML の言語を変更
-        "lang": "ja"
-    },
-    "editor.tabSize": 2,
-    "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace",
-    "editor.renderControlCharacters": true,
-    "terminal.integrated.fontSize": 16,
-    "cSpell.userWords": [
-        "mybook",
-        "mzmjp"
-    ],
-    "window.zoomLevel": 0,
-
+  "cSpell.userWords": ["Hiragino", "Meiryo", "bloginfo", "mybook"],
+  "editor.bracketPairColorization.enabled": true, //対応するカッコに色をつける
+  "editor.defaultFormatter": "esbenp.prettier-vscode", //デフォルトのフォーマッタを定義する
+  "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace", //フォントを指定する
+  "editor.fontSize": 20, // 文字サイズを20ピクセルに設定する
+  "editor.formatOnSave": true, //ファイルを保存するときにフォーマットする
+  "editor.guides.bracketPairs": true, //対応するカッコのガイドに色をつける
+  "editor.linkedEditing": true, //対応するタグを同時に変更する
+  "editor.minimap.showSlider": "always", //ミニマップを常に表示する
+  "editor.renderControlCharacters": true, //制御文字を表示する
+  "editor.renderWhitespace": "all", // 半角スペースを表示する
+  "editor.snippetSuggestions": "top", // Emmet などのスニペット候補を優先して表示する
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2, //インデント幅をスペース2個分に設定する
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.wordWrap": "bounded", // 折返し時にインデントする
+  "emmet.showSuggestionsAsSnippets": true, // Emmet の候補を表示
+  "emmet.triggerExpansionOnTab": true, // TAB キーで Emmet を展開できるようにする
+  "emmet.variables": {
+    "lang": "ja" // Emmet で展開される HTML の言語を日本語にする
+  },
+  "extensions.ignoreRecommendations": false,
+  "highlight.regexes": {
+    "workbench.editor.untitled.hint": "hidden",
+    "(　|｛|｝|￥|＝|“|”|‘|’|＋|＠|：|；|＿|[０-９]|[Ａ-Ｚ]|[ａ-ｚ])": {
+      "decorations": [
+        {
+          "backgroundColor": "#fc05",
+          "color": "#eee"
+        }
+      ]
+    }
+  },
+  "html-css-class-completion.enableEmmetSupport": true,
+  "html.format.wrapLineLength": 0,
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": ""
+    }
+  ],
+  "scss.lint.ieHack": "error",
+  "scss.lint.important": "warning",
+  "terminal.integrated.fontSize": 16,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.colorCustomizations": {
+    "editor.findMatchBorder": "#fc0",
+    "editor.lineHighlightBackground": "#ccc4",
+    "editor.selectionBackground": "#fc06",
+    "editorCursor.foreground": "#fc0"
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "GitHub Dark",
+  "editor.wordWrapColumn": 80,
+  "editor.showFoldingControls": "always",
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\\\|;:'\\\",.<>/?　、。！？「」【】『』（）",
+  "editor.minimap.size": "fit",
+  "editor.minimap.renderCharacters": false,
+  "editor.hover.enabled": false,
+  "editor.renderLineHighlight": "all",
+  "editor.wrappingIndent": "indent",
+  "window.title": "${dirty}${activeEditorLong}"
 }
