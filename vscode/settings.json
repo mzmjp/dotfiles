@@ -1,20 +1,26 @@
 {
-  "cSpell.userWords": ["Hiragino", "Meiryo", "bloginfo", "mybook"],
+  "cSpell.userWords": [
+    "Hiragino",
+    "Meiryo",
+    "mzmjp",
+    "palt",
+    "precomposed",
+    "viewbox"
+  ],
   "editor.bracketPairColorization.enabled": true, //対応するカッコに色をつける
   "editor.defaultFormatter": "esbenp.prettier-vscode", //デフォルトのフォーマッタを定義する
   "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace", //フォントを指定する
   "editor.fontSize": 20, // 文字サイズを20ピクセルに設定する
   "editor.formatOnSave": true, //ファイルを保存するときにフォーマットする
   "editor.guides.bracketPairs": true, //対応するカッコのガイドに色をつける
-  "editor.linkedEditing": true, //対応するタグを同時に変更する
   "editor.minimap.showSlider": "always", //ミニマップを常に表示する
+  "editor.linkedEditing": true, //対応するタグを同時に変更する
   "editor.renderControlCharacters": true, //制御文字を表示する
   "editor.renderWhitespace": "all", // 半角スペースを表示する
   "editor.snippetSuggestions": "top", // Emmet などのスニペット候補を優先して表示する
   "editor.suggestSelection": "first",
   "editor.tabSize": 2, //インデント幅をスペース2個分に設定する
   "editor.unicodeHighlight.ambiguousCharacters": false,
-  "editor.wordWrap": "bounded", // 折返し時にインデントする
   "emmet.showSuggestionsAsSnippets": true, // Emmet の候補を表示
   "emmet.triggerExpansionOnTab": true, // TAB キーで Emmet を展開できるようにする
   "emmet.variables": {
@@ -44,25 +50,39 @@
   ],
   "scss.lint.ieHack": "error",
   "scss.lint.important": "warning",
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 18,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.colorCustomizations": {
     "editor.findMatchBorder": "#fc0",
     "editor.lineHighlightBackground": "#ccc4",
-    "editor.selectionBackground": "#fc06",
+    "editor.selectionBackground": "#fc03",
     "editorCursor.foreground": "#fc0"
   },
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "GitHub Dark",
-  "editor.wordWrapColumn": 80,
   "editor.showFoldingControls": "always",
   "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\\\|;:'\\\",.<>/?　、。！？「」【】『』（）",
   "editor.minimap.size": "fit",
   "editor.minimap.renderCharacters": false,
-  "editor.hover.enabled": false,
+  // "editor.hover.enabled": false,
   "editor.renderLineHighlight": "all",
-  "editor.wrappingIndent": "indent",
-  "window.title": "${dirty}${activeEditorLong}"
+  // "editor.wrappingIndent": "indent",
+  "window.title": "${dirty}${activeEditorLong}",
+  "editor.rulers": [60, 80],
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.wordWrapColumn": 80,
+  "editor.wordWrap": "bounded",
+  "security.workspace.trust.untrustedFiles": "open",
+  "open-in-browser.default": "Chrome",
+  "search.exclude": {
+    "node_modules": true
+  },
+  "files.exclude": {
+    ".sass-cache": true,
+    "node_modules": true
+  }
 }
