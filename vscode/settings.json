@@ -55,7 +55,7 @@
   "workbench.colorCustomizations": {
     "editor.findMatchBorder": "#fc0",
     "editor.lineHighlightBackground": "#ccc4",
-    "editor.selectionBackground": "#fc03",
+    "editor.selectionBackground": "#fc06",
     "editorCursor.foreground": "#fc0"
   },
   "workbench.editor.enablePreview": false,
@@ -84,5 +84,9 @@
   "files.exclude": {
     ".sass-cache": true,
     "node_modules": true
-  }
+  },
+  "workbench.tree.indent": 20,
+  "editor.cursorBlinking": "smooth", // カーソルが滑らかに点滅するように
+  "editor.cursorSmoothCaretAnimation": true, // カーソルの点滅をアニメーション表示する
+  "editor.cursorStyle": "block" // カーソルの外観をブロックに変更
 }
