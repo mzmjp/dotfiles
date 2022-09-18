@@ -58,12 +58,11 @@
     "editor.selectionBackground": "#fc06",
     "editorCursor.foreground": "#fc0"
   },
-  "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "GitHub Dark",
   "editor.showFoldingControls": "always",
-  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\\\|;:'\\\",.<>/?　、。！？「」【】『』（）",
+  "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\\\|;:'\\\",.<>/?　、。！？「」【】『』（）",
   "editor.minimap.size": "fit",
   "editor.minimap.renderCharacters": false,
   // "editor.hover.enabled": false,
@@ -74,8 +73,10 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "editor.wordWrapColumn": 80,
   "editor.wordWrap": "bounded",
+  "[markdown]": {
+    "editor.wordWrap": "bounded"
+  },
   "security.workspace.trust.untrustedFiles": "open",
   "open-in-browser.default": "Chrome",
   "search.exclude": {
@@ -88,5 +89,12 @@
   "workbench.tree.indent": 20,
   "editor.cursorBlinking": "smooth", // カーソルが滑らかに点滅するように
   "editor.cursorSmoothCaretAnimation": true, // カーソルの点滅をアニメーション表示する
-  "editor.cursorStyle": "block" // カーソルの外観をブロックに変更
+  "editor.cursorStyle": "block", // カーソルの外観をブロックに変更
+  "workbench.editor.enablePreview": false,
+  "editor.tokenColorCustomizations": {
+    "comments": "#fff6"
+  },
+  "workbench.sideBar.location": "right",
+  "editor.stickyScroll.enabled": true
+  // "keyboard.dispatch": "keyCode"
 }
