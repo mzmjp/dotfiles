@@ -95,6 +95,7 @@
     "comments": "#fff6"
   },
   "workbench.sideBar.location": "right",
-  "editor.stickyScroll.enabled": true
+  "editor.stickyScroll.enabled": true,
+  "window.newWindowDimensions": "inherit"
   // "keyboard.dispatch": "keyCode"
 }
