@@ -35,28 +35,43 @@
     "command": "-extension.liveServer.goOnline",
     "when": "editorTextFocus"
   },
+  // {
+  // "key": "cmd+[BracketLeft]",
+  // "command": "workbench.action.terminal.new",
+  // "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  // },
   {
-    // "key": "cmd+[BracketLeft]",
-    // "command": "workbench.action.terminal.new",
-    // "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-  },
-  {
-    "key": "shift+alt+cmd+]",
+    // 折りたたみ
+    "key": "ctrl+shift+]",
     "command": "editor.unfold",
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "shift+cmd+[BracketLeft]",
-    "command": "workbench.action.toggleMaximizedPanel"
+    // 展開
+    "key": "ctrl+shift+[",
+    "command": "editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
   },
+  // {
+  //   "key": "shift+cmd+[BracketLeft]",
+  //   "command": "workbench.action.toggleMaximizedPanel"
+  // },
+  // {
+  //   "key": "cmd+[BracketLeft]",
+  //   "command": "workbench.action.focusActiveEditorGroup",
+  //   "when": "terminalFocus"
+  // },
+  // {
+  //   "key": "cmd+[BracketLeft]",
+  //   "command": "workbench.action.terminal.focus",
+  //   "when": "editorFocus"
+  // },
   {
-    "key": "cmd+[BracketLeft]",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "cmd+[BracketLeft]",
-    "command": "workbench.action.terminal.focus",
-    "when": "editorFocus"
+    "key": "shift+enter",
+    "command": "type",
+    "args": {
+      "text": "<br>"
+    },
+    "when": "editorTextFocus"
   }
 ]

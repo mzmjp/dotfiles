@@ -56,7 +56,12 @@
     "editor.findMatchBorder": "#fc0",
     "editor.lineHighlightBackground": "#ccc4",
     "editor.selectionBackground": "#fc06",
-    "editorCursor.foreground": "#fc0"
+    "editorCursor.foreground": "#fc0",
+    // "tab.activeBorderTop": "#fc0",
+    // "tab.border": "#fc0",
+    // "tab.activeBorder": "#fc0"
+    "tab.activeBackground": "#444c",
+    "terminalCursor.foreground": "#fc0"
   },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
@@ -88,7 +93,7 @@
   },
   "workbench.tree.indent": 20,
   "editor.cursorBlinking": "smooth", // カーソルが滑らかに点滅するように
-  "editor.cursorSmoothCaretAnimation": true, // カーソルの点滅をアニメーション表示する
+  "editor.cursorSmoothCaretAnimation": "on", // カーソルの点滅をアニメーション表示する
   "editor.cursorStyle": "block", // カーソルの外観をブロックに変更
   "workbench.editor.enablePreview": false,
   "editor.tokenColorCustomizations": {
@@ -106,5 +111,17 @@
     "rgba( 32, 128, 32, 0.5)", // 4インデント目の色
     "rgba( 32, 64, 128, 0.5)", // 5インデント目の色
     "rgba(128, 64, 128, 0.5)" // 6インデント目の色
-  ]
+  ],
+  "editor.glyphMargin": false,
+  "markuplint.defaultConfig": {
+    "extends": ["markuplint:recommended"]
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  },
+  "Prettier-SQL.keywordCase": "lower",
+  "Prettier-SQL.SQLFlavourOverride": "bigquery",
+  "Prettier-SQL.ignoreTabSettings": true,
+  "Prettier-SQL.expressionWidth": 80,
+  "Prettier-SQL.newlineBeforeSemicolon": true
 }
