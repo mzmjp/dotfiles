@@ -35,11 +35,13 @@
     "command": "-extension.liveServer.goOnline",
     "when": "editorTextFocus"
   },
-  // {
-  // "key": "cmd+[BracketLeft]",
-  // "command": "workbench.action.terminal.new",
-  // "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-  // },
+  {
+    // 新しいターミナルを開く
+    // cmd+@
+    "key": "cmd+[BracketLeft]",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
   {
     // 折りたたみ
     "key": "ctrl+shift+]",
@@ -52,26 +54,32 @@
     "command": "editor.fold",
     "when": "editorTextFocus && foldingEnabled"
   },
-  // {
-  //   "key": "shift+cmd+[BracketLeft]",
-  //   "command": "workbench.action.toggleMaximizedPanel"
-  // },
-  // {
-  //   "key": "cmd+[BracketLeft]",
-  //   "command": "workbench.action.focusActiveEditorGroup",
-  //   "when": "terminalFocus"
-  // },
-  // {
-  //   "key": "cmd+[BracketLeft]",
-  //   "command": "workbench.action.terminal.focus",
-  //   "when": "editorFocus"
-  // },
   {
-    "key": "shift+enter",
-    "command": "type",
-    "args": {
-      "text": "<br>"
-    },
-    "when": "editorTextFocus"
+    // ターミナルの画面を最大化する
+    // shift+cmd+@
+    "key": "shift+cmd+[BracketLeft]",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    // ターミナルにフォーカスがある際、アクティブなエディターグループにフォーカス
+    // cmd+@
+    "key": "cmd+[BracketLeft]",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    // エディターにフォーカスがある際、ターミナルにフォーカス
+    // cmd+@
+    "key": "cmd+[BracketLeft]",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorFocus"
   }
+  // {
+  //   "key": "shift+enter",
+  //   "command": "type",
+  //   "args": {
+  //     "text": "<br>"
+  //   },
+  //   "when": "editorTextFocus"
+  // }
 ]

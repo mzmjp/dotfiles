@@ -18,17 +18,17 @@
   "editor.renderControlCharacters": true, //制御文字を表示する
   "editor.renderWhitespace": "all", // 半角スペースを表示する
   "editor.snippetSuggestions": "top", // Emmet などのスニペット候補を優先して表示する
-  "editor.suggestSelection": "first",
-  "editor.tabSize": 2, //インデント幅をスペース2個分に設定する
-  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.suggestSelection": "first", // サジェスト時、一番上の項目が常に選択される
+  "editor.tabSize": 2, // タブのサイズを2に指定する
+  "editor.unicodeHighlight.ambiguousCharacters": false, // 基本的な ASCII 文字と混同される可能性のある文字を強調表示しない
   "emmet.showSuggestionsAsSnippets": true, // Emmet の候補を表示
   "emmet.triggerExpansionOnTab": true, // TAB キーで Emmet を展開できるようにする
   "emmet.variables": {
     "lang": "ja" // Emmet で展開される HTML の言語を日本語にする
   },
-  "extensions.ignoreRecommendations": false,
+  "workbench.editor.untitled.hint": "hidden", // 新規タブ作成時にヒントを表示しない
   "highlight.regexes": {
-    "workbench.editor.untitled.hint": "hidden",
+    // 拡張機能 Highlight の設定
     "(　|｛|｝|￥|＝|“|”|‘|’|＋|＠|：|；|＿|[０-９]|[Ａ-Ｚ]|[ａ-ｚ])": {
       "decorations": [
         {
@@ -38,8 +38,8 @@
       ]
     }
   },
-  "html-css-class-completion.enableEmmetSupport": true,
-  "html.format.wrapLineLength": 0,
+  "html-css-class-completion.enableEmmetSupport": true, // 拡張機能IntelliSense for CSS class names in HTMLをEmmetで利用できるようにする
+  "html.format.wrapLineLength": 0, // HTMLの1行あたりの文字数制限を無効にする
   "mssql.connections": [
     {
       "server": "{{put-server-name-here}}",
@@ -48,10 +48,10 @@
       "password": ""
     }
   ],
-  "scss.lint.ieHack": "error",
-  "scss.lint.important": "warning",
-  "terminal.integrated.fontSize": 18,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "scss.lint.ieHack": "error", // IEハックの箇所はエラーを表示する
+  "scss.lint.important": "warning", // !importantの箇所は警告を表示する
+  "terminal.integrated.fontSize": 18, // ターミナルの文字サイズを18pxにする
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", // サジェスト一覧の初期表示項目設定
   "workbench.colorCustomizations": {
     "editor.findMatchBorder": "#fc0",
     "editor.lineHighlightBackground": "#ccc4",
@@ -63,15 +63,13 @@
     "tab.activeBackground": "#444c",
     "terminalCursor.foreground": "#fc0"
   },
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none",
-  "workbench.colorTheme": "GitHub Dark",
-  "editor.showFoldingControls": "always",
-  "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\\\|;:'\\\",.<>/?　、。！？「」【】『』（）",
-  "editor.minimap.size": "fit",
+  "workbench.iconTheme": "material-icon-theme", // エクスプローラーに表示されるアイコンを指定する
+  "workbench.startupEditor": "none", // 起動時に何も表示しない
+  "workbench.colorTheme": "GitHub Dark", // 利用するテーマを指定する
+  "editor.showFoldingControls": "always", // 行の折りたたみ記号を常に表示する
+  "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\\\|;:'\\\",.<>/?　、。！？「」【】『』（）", // セパレータ（文字）を指定する
+  "editor.minimap.size": "fit", // ミニマップのサイズを固定する
   "editor.minimap.renderCharacters": false,
-  // "editor.hover.enabled": false,
-  "editor.renderLineHighlight": "all",
   // "editor.wrappingIndent": "indent",
   "window.title": "${dirty}${activeEditorLong}",
   "editor.rulers": [60, 80],
@@ -89,6 +87,7 @@
   },
   "files.exclude": {
     ".sass-cache": true,
+    "**.code-workspace": true,
     "node_modules": true
   },
   "workbench.tree.indent": 20,
@@ -112,7 +111,7 @@
     "rgba( 32, 64, 128, 0.5)", // 5インデント目の色
     "rgba(128, 64, 128, 0.5)" // 6インデント目の色
   ],
-  "editor.glyphMargin": false,
+  // "editor.glyphMargin": false,
   "markuplint.defaultConfig": {
     "extends": ["markuplint:recommended"]
   },
@@ -123,5 +122,83 @@
   "Prettier-SQL.SQLFlavourOverride": "bigquery",
   "Prettier-SQL.ignoreTabSettings": true,
   "Prettier-SQL.expressionWidth": 80,
-  "Prettier-SQL.newlineBeforeSemicolon": true
+  "Prettier-SQL.newlineBeforeSemicolon": true,
+  "errorLens.gutterIconsEnabled": true,
+  "explorer.openEditors.visible": 0, // エクスプローラーで現在開いているエディタを非表示にする
+  "editor.renderLineHighlight": "all",
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "com_dotnet",
+    "Core",
+    "ctype",
+    "curl",
+    "date",
+    "dba",
+    "dom",
+    "enchant",
+    "exif",
+    "FFI",
+    "fileinfo",
+    "filter",
+    "fpm",
+    "ftp",
+    "gd",
+    "gettext",
+    "gmp",
+    "hash",
+    "iconv",
+    "imap",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "meta",
+    "mysqli",
+    "oci8",
+    "odbc",
+    "openssl",
+    "pcntl",
+    "pcre",
+    "PDO",
+    "pdo_ibm",
+    "pdo_mysql",
+    "pdo_pgsql",
+    "pdo_sqlite",
+    "pgsql",
+    "Phar",
+    "posix",
+    "pspell",
+    "random",
+    "readline",
+    "Reflection",
+    "session",
+    "shmop",
+    "SimpleXML",
+    "snmp",
+    "soap",
+    "sockets",
+    "sodium",
+    "SPL",
+    "sqlite3",
+    "standard",
+    "superglobals",
+    "sysvmsg",
+    "sysvsem",
+    "sysvshm",
+    "tidy",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlrpc",
+    "xmlwriter",
+    "xsl",
+    "Zend OPcache",
+    "zip",
+    "zlib",
+    "wordpress"
+  ] // 現在の行を強調表示する
 }
