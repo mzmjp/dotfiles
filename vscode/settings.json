@@ -1,4 +1,5 @@
 {
+  // Code Spell Checker の単語登録
   "cSpell.userWords": [
     "Hiragino",
     "Meiryo",
@@ -7,15 +8,15 @@
     "precomposed",
     "viewbox"
   ],
-  "editor.bracketPairColorization.enabled": true, //対応するカッコに色をつける
-  "editor.defaultFormatter": "esbenp.prettier-vscode", //デフォルトのフォーマッタを定義する
-  "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace", //フォントを指定する
-  "editor.fontSize": 20, // 文字サイズを20ピクセルに設定する
-  "editor.formatOnSave": true, //ファイルを保存するときにフォーマットする
-  "editor.guides.bracketPairs": true, //対応するカッコのガイドに色をつける
-  "editor.minimap.showSlider": "always", //ミニマップを常に表示する
-  "editor.linkedEditing": true, //対応するタグを同時に変更する
-  "editor.renderControlCharacters": true, //制御文字を表示する
+  "editor.bracketPairColorization.enabled": true, // 対応するカッコに色をつける
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトのフォーマッタを定義する
+  "editor.fontFamily": "'Bizin Gothic'", // フォントファミリーを指定する
+  "editor.fontSize": 22, // フォントサイズを指定する
+  "editor.formatOnSave": true, // ファイルを保存するときにフォーマットする
+  "editor.guides.bracketPairs": true, // 対応するカッコのガイドに色をつける
+  "editor.minimap.showSlider": "always", // ミニマップを常に表示する
+  "editor.linkedEditing": true, // 対応するタグを同時に変更する
+  "editor.renderControlCharacters": true, // 制御文字を表示する
   "editor.renderWhitespace": "all", // 半角スペースを表示する
   "editor.snippetSuggestions": "top", // Emmet などのスニペット候補を優先して表示する
   "editor.suggestSelection": "first", // サジェスト時、一番上の項目が常に選択される
@@ -23,12 +24,12 @@
   "editor.unicodeHighlight.ambiguousCharacters": false, // 基本的な ASCII 文字と混同される可能性のある文字を強調表示しない
   "emmet.showSuggestionsAsSnippets": true, // Emmet の候補を表示
   "emmet.triggerExpansionOnTab": true, // TAB キーで Emmet を展開できるようにする
+  // Emmet で展開される HTML の言語を日本語にする
   "emmet.variables": {
-    "lang": "ja" // Emmet で展開される HTML の言語を日本語にする
+    "lang": "ja"
   },
-  "workbench.editor.untitled.hint": "hidden", // 新規タブ作成時にヒントを表示しない
+  // 拡張機能 Highlight の設定
   "highlight.regexes": {
-    // 拡張機能 Highlight の設定
     "(　|｛|｝|￥|＝|“|”|‘|’|＋|＠|：|；|＿|[０-９]|[Ａ-Ｚ]|[ａ-ｚ])": {
       "decorations": [
         {
@@ -40,28 +41,22 @@
   },
   "html-css-class-completion.enableEmmetSupport": true, // 拡張機能IntelliSense for CSS class names in HTMLをEmmetで利用できるようにする
   "html.format.wrapLineLength": 0, // HTMLの1行あたりの文字数制限を無効にする
-  "mssql.connections": [
-    {
-      "server": "{{put-server-name-here}}",
-      "database": "{{put-database-name-here}}",
-      "user": "{{put-username-here}}",
-      "password": ""
-    }
-  ],
   "scss.lint.ieHack": "error", // IEハックの箇所はエラーを表示する
   "scss.lint.important": "warning", // !importantの箇所は警告を表示する
-  "terminal.integrated.fontSize": 18, // ターミナルの文字サイズを18pxにする
+  "terminal.integrated.fontFamily": "'Bizin Gothic'",
+  "terminal.integrated.fontSize": 20, // ターミナルの文字サイズを18pxにする
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", // サジェスト一覧の初期表示項目設定
   "workbench.colorCustomizations": {
-    "editor.findMatchBorder": "#fc0",
-    "editor.lineHighlightBackground": "#ccc4",
-    "editor.selectionBackground": "#fc06",
-    "editorCursor.foreground": "#fc0",
-    // "tab.activeBorderTop": "#fc0",
-    // "tab.border": "#fc0",
-    // "tab.activeBorder": "#fc0"
-    "tab.activeBackground": "#444c",
-    "terminalCursor.foreground": "#fc0"
+    "editor.findMatchBorder": "#fc0", // 現在の検索一致の境界線の色。
+    "editor.lineHighlightBackground": "#ccc4", // カーソル位置の行のハイライトの背景色
+    "editor.selectionBackground": "#fc06", // エディターの選択の色
+    "editorCursor.foreground": "#fc0", // エディターのカーソルの色
+    "tab.activeBorder": "#fc0", // アクティブなタブの下の境界線
+    "tab.activeBackground": "#000", // アクティブなタブの背景色
+    "tab.inactiveBackground": "#5557", // 非アクティブなタブの背景色
+    "terminalCursor.foreground": "#fc0", // ターミナルのカーソル色
+    "statusBarItem.warningBackground": "#fc0", // ステータスバーの警告背景色
+    "statusBarItem.warningForeground": "#24292F" // ステータスバーの警告文字色
   },
   "workbench.iconTheme": "material-icon-theme", // エクスプローラーに表示されるアイコンを指定する
   "workbench.startupEditor": "none", // 起動時に何も表示しない
@@ -69,40 +64,42 @@
   "editor.showFoldingControls": "always", // 行の折りたたみ記号を常に表示する
   "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\\\|;:'\\\",.<>/?　、。！？「」【】『』（）", // セパレータ（文字）を指定する
   "editor.minimap.size": "fit", // ミニマップのサイズを固定する
-  "editor.minimap.renderCharacters": false,
-  // "editor.wrappingIndent": "indent",
-  "window.title": "${dirty}${activeEditorLong}",
-  "editor.rulers": [60, 80],
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "editor.wordWrap": "bounded",
+  "editor.minimap.renderCharacters": false, // ミニマップに文字を描画しない
+  "window.title": "${dirty}${activeEditorLong}", // ウィンドウタイトルの表示設定
+  "editor.rulers": [60, 80], // ルーラーの位置
+  "files.insertFinalNewline": true, // ファイルの末尾に改行を追加
+  "files.trimFinalNewlines": true, // ファイルの末尾の改行をトリム
+  "files.trimTrailingWhitespace": true, // 行末の空白をトリム
+  "editor.wordWrap": "bounded", // ワードラップの範囲を制限
+  // Markdownのワードラップ範囲を制限
   "[markdown]": {
     "editor.wordWrap": "bounded"
   },
-  "security.workspace.trust.untrustedFiles": "open",
-  "open-in-browser.default": "Chrome",
+  "security.workspace.trust.untrustedFiles": "open", // 未確認ファイルの扱いを開くに設定
+  // 検索から除外するファイルを指定
   "search.exclude": {
     "node_modules": true
   },
+  // サイドバーに表示しないファイルを指定
   "files.exclude": {
     ".sass-cache": true,
     "**.code-workspace": true,
     "node_modules": true
   },
-  "workbench.tree.indent": 20,
+  "workbench.tree.indent": 20, // サイドバーのツリーのインデント幅
   "editor.cursorBlinking": "smooth", // カーソルが滑らかに点滅するように
   "editor.cursorSmoothCaretAnimation": "on", // カーソルの点滅をアニメーション表示する
   "editor.cursorStyle": "block", // カーソルの外観をブロックに変更
-  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreview": false, // プレビュー機能を無効化
+  // コメントの色をカスタマイズ
   "editor.tokenColorCustomizations": {
     "comments": "#fff6"
   },
-  "workbench.sideBar.location": "right",
-  "editor.stickyScroll.enabled": true,
-  "window.newWindowDimensions": "inherit",
-  "window.commandCenter": true,
-  // "keyboard.dispatch": "keyCode"
+  "workbench.sideBar.location": "right", // サイドバーの位置を右に設定
+  "editor.stickyScroll.enabled": true, // スティッキースクロールを有効化
+  "window.newWindowDimensions": "inherit", // 新しいウィンドウのサイズを継承
+  "window.commandCenter": true, // コマンドセンターを表示
+  // インデントカラーの指定
   "indentRainbow.colors": [
     "rgba(128, 64, 64, 0.5)", // 1インデント目の色
     "rgba(128, 96, 32, 0.5)", // 2インデント目の色
@@ -111,21 +108,23 @@
     "rgba( 32, 64, 128, 0.5)", // 5インデント目の色
     "rgba(128, 64, 128, 0.5)" // 6インデント目の色
   ],
-  // "editor.glyphMargin": false,
+  // markuplintのデフォルト設定
   "markuplint.defaultConfig": {
     "extends": ["markuplint:recommended"]
   },
+  // SQL用のデフォルトフォーマッターを設定
   "[sql]": {
     "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
   },
-  "Prettier-SQL.keywordCase": "lower",
-  "Prettier-SQL.SQLFlavourOverride": "bigquery",
-  "Prettier-SQL.ignoreTabSettings": true,
-  "Prettier-SQL.expressionWidth": 80,
-  "Prettier-SQL.newlineBeforeSemicolon": true,
-  "errorLens.gutterIconsEnabled": true,
-  "explorer.openEditors.visible": 0, // エクスプローラーで現在開いているエディタを非表示にする
-  "editor.renderLineHighlight": "all",
+  "Prettier-SQL.keywordCase": "lower", // SQLのキーワードを小文字に統一
+  "Prettier-SQL.SQLFlavourOverride": "bigquery", // SQLフレーバーをBigQueryに設定
+  "Prettier-SQL.ignoreTabSettings": true, // タブ設定を無視
+  "Prettier-SQL.expressionWidth": 80, // SQLの式の幅制限
+  "Prettier-SQL.newlineBeforeSemicolon": true, // セミコロンの前に改行を挿入
+  "errorLens.gutterIconsEnabled": true, // エラーレンズのアイコンを表示
+  "explorer.openEditors.visible": 1, // エクスプローラーで現在開いているエディタを非表示にする
+  "editor.renderLineHighlight": "all", // 行ハイライトを全て表示
+  // PHP Intelephenseの設定
   "intelephense.stubs": [
     "apache",
     "bcmath",
@@ -200,5 +199,32 @@
     "zip",
     "zlib",
     "wordpress"
-  ] // 現在の行を強調表示する
+  ],
+  "workbench.editor.empty.hint": "hidden", // 新規タブ作成時にヒントを表示しない
+  "workbench.activityBar.location": "top", // アクティビティバーの位置を上に設定
+  "debug.console.fontSize": 18, // デバッグコンソールのフォントサイズ
+  "scm.inputFontSize": 20, // SCM入力フィールドのフォントサイズ
+  // Codeiumの設定
+  "codeium.enableConfig": {
+    "*": true,
+    "plaintext": true
+  },
+  // PHP用のデフォルトフォーマッター
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  // Python用のデフォルトフォーマッター
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnSave": true
+  },
+  // Astro用のデフォルトフォーマッター
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  // タブのカスタムラベル設定
+  "workbench.editor.customLabels.patterns": {
+    "**/index.*": "${dirname} .../${dirname(1)}",
+    "**/{page,layout,template,route,actions,hooks,components,utils,types}.{js,ts,jsx,tsx}": "${dirname}/${filename}.${extname} .../${dirname(1)}"
+  }
 }
