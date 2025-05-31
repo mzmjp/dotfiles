@@ -58,9 +58,7 @@
     "statusBarItem.warningBackground": "#fc0", // ステータスバーの警告背景色
     "statusBarItem.warningForeground": "#24292F" // ステータスバーの警告文字色
   },
-  "workbench.iconTheme": "material-icon-theme", // エクスプローラーに表示されるアイコンを指定する
-  "workbench.startupEditor": "none", // 起動時に何も表示しない
-  "workbench.colorTheme": "GitHub Dark", // 利用するテーマを指定する
+  "workbench.startupEditor": "none", // 起動時にエディターを表示しない
   "editor.showFoldingControls": "always", // 行の折りたたみ記号を常に表示する
   "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\\\|;:'\\\",.<>/?　、。！？「」【】『』（）", // セパレータ（文字）を指定する
   "editor.minimap.size": "fit", // ミニマップのサイズを固定する
@@ -73,7 +71,8 @@
   "editor.wordWrap": "bounded", // ワードラップの範囲を制限
   // Markdownのワードラップ範囲を制限
   "[markdown]": {
-    "editor.wordWrap": "bounded"
+    "editor.wordWrap": "bounded",
+    "files.trimTrailingWhitespace": false // Markdownファイルの行末の空白をトリムしない
   },
   "security.workspace.trust.untrustedFiles": "open", // 未確認ファイルの扱いを開くに設定
   // 検索から除外するファイルを指定
@@ -163,10 +162,6 @@
     "pcntl",
     "pcre",
     "PDO",
-    "pdo_ibm",
-    "pdo_mysql",
-    "pdo_pgsql",
-    "pdo_sqlite",
     "pgsql",
     "Phar",
     "posix",
@@ -215,8 +210,7 @@
   },
   // Python用のデフォルトフォーマッター
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python",
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "ms-python.python"
   },
   // Astro用のデフォルトフォーマッター
   "[astro]": {
@@ -226,5 +220,8 @@
   "workbench.editor.customLabels.patterns": {
     "**/index.*": "${dirname} .../${dirname(1)}",
     "**/{page,layout,template,route,actions,hooks,components,utils,types}.{js,ts,jsx,tsx}": "${dirname}/${filename}.${extname} .../${dirname(1)}"
-  }
+  },
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "github.copilot.nextEditSuggestions.enabled": true
 }
